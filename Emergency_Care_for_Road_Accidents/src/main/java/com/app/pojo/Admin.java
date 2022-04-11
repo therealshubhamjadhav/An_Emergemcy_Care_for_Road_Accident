@@ -14,7 +14,7 @@ public class Admin extends BaseEntity {
 	private String email;
 
 	private String password;
-
+//
 	private String mobile;
 
 	public Admin() {
