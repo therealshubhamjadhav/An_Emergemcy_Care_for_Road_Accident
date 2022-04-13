@@ -51,10 +51,9 @@ public class LoginDao implements LoginDaoInterface {
 	@Override
 	public Hospital validateHospital(String email, String password) {
 		try {
-			String jpql = "select h from Hospital h where h.email=:email ";// and h.password=:password
-			Hospital hospital = mgr.createQuery(jpql, Hospital.class).setParameter("email", email).getSingleResult();// setParameter("password",
-																														// password).
-			if (hospital != null && passwordEncoder.matches(password, hospital.getPassword()))
+			String jpql = "select h from Hospital h where h.email=:email and h.password=:password";// 
+			Hospital hospital = mgr.createQuery(jpql, Hospital.class).setParameter("email", email).setParameter("password", password).getSingleResult(); 
+			if (hospital != null)
 				return hospital;
 		} catch (Exception e) {
 			return null;

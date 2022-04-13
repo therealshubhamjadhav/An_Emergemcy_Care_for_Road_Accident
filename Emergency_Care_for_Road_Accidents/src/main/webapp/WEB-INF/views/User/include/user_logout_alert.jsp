@@ -1,5 +1,10 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <%  
+response.setHeader("Cache-Control","no-store");   
+response.setHeader("Pragma","no-cache");   
+response.setHeader ("Expires", "0"); //prevents caching at the proxy server  
+%>   
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">

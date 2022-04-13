@@ -67,9 +67,7 @@
 							Management</span>
 				</a>
 					<ul class="sidenav-second-level collapse" id="user">
-						<li><a href="<spring:url value='/Admin/addnewuser'/>"> <i
-								class="fa fa-fw fa-link"></i> Add New Users
-						</a></li>
+						
 						<li><a href="<spring:url value='/Admin/availableuser'/>">
 								<i class="fa fa-fw fa-link"></i> Available Users
 						</a></li>

@@ -99,6 +99,6 @@ public class LoginController {
 	public String logoutUsers(HttpSession hs) {
 		hs.getAttribute("userDetails");
 		hs.invalidate();
-		return "redirect:/";
+		return "redirect:/signin";
 	}
 }

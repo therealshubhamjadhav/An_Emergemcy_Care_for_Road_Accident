@@ -26,8 +26,8 @@ public class Utility {
 
 	/*
 	 * public static boolean validateDublicateEmail(String email,
-	 * ArrayList<Customer> list) throws CustomerHandlingException { for (Customer c
-	 * : list) { if (c != null && email.equals(c.getEmail())) { return false; } }
+	 * ArrayList<Customer> list) throws CustomerHandlingException { for (user u
+	 * : list) { if (u != null && email.equals(u.getEmail())) { return false; } }
 	 * return true; }
 	 */
 
